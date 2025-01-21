@@ -42,8 +42,8 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","file/BetterVanillaBuildingV3.5.zip","file/Create+Simple+Storage+2.1.zip","file/MandalasGUI.zip","file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip","file/MandalaGUIDarkMod.zip","file/CreateEasyVillager_v1.0.1a.zip","file/Createful-plaques-1.0L.zip"]
-incompatibleResourcePacks:["file/Create+Simple+Storage+2.1.zip","file/MandalasGUI.zip","file/MandalaGUIDarkMod.zip","file/Createful-plaques-1.0L.zip"]
+resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","file/BetterVanillaBuildingV3.5.zip","file/Create Simple Storage 2.1.zip","file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip","file/MandalasGUI+Dakmode_1.20.5.zip","file/Mandala\u0027s GUI - Dark Mode Compat 0.3.zip","create_questing","file/Createful-plaques-1.0.zip"]
+incompatibleResourcePacks:["file/Create Simple Storage 2.1.zip","file/MandalasGUI+Dakmode_1.20.5.zip","file/Mandala\u0027s GUI - Dark Mode Compat 0.3.zip"]
 lastServer:
 lang:en_us
 soundDevice:""
