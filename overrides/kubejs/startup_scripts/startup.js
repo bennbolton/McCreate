@@ -1,0 +1,1 @@
+Platform.getMods().kubejs.name = "McCreate"
