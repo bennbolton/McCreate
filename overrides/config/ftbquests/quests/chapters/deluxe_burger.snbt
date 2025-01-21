@@ -1,0 +1,819 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	default_repeatable_quest: true
+	filename: "deluxe_burger"
+	group: ""
+	icon: "delightful:deluxe_cheeseburger"
+	id: "668B0464DA7B95CF"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:wheat"
+			id: "539B8BAB506644DB"
+			tasks: [{
+				id: "2B6A1B2D2C982DD4"
+				title: "Wheat"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			icon: "create:limestone"
+			id: "4723CA2A0D35802A"
+			tasks: [{
+				id: "774233C6B307F058"
+				title: "Limestone"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4723CA2A0D35802A"]
+			dependency_requirement: "all_started"
+			icon: "garnished:crushed_salt"
+			id: "1ADBB1B2DB8B3A61"
+			tasks: [{
+				id: "1AC822A3D6960EF7"
+				title: "Crushed Salt"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1ADBB1B2DB8B3A61"]
+			icon: "garnished:salt_compound"
+			id: "1D67461863475CB0"
+			tasks: [{
+				id: "6F1C18A560E675E4"
+				title: "Salt Compound"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1D67461863475CB0"]
+			icon: "createfood:salt"
+			id: "006536CA38087BF5"
+			tasks: [{
+				id: "5FB79F755BF29D8F"
+				title: "Salt"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"006536CA38087BF5"
+				"4DC0BAB201FA32EB"
+			]
+			icon: "createfood:salt_dough"
+			id: "0FEB750E913E48A8"
+			tasks: [{
+				id: "218EC6D363068C43"
+				title: "Salt Dough"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["539B8BAB506644DB"]
+			icon: "create:wheat_flour"
+			id: "4DC0BAB201FA32EB"
+			tasks: [{
+				id: "0853A2212DEC67C4"
+				title: "Wheat Flower"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0FEB750E913E48A8"]
+			icon: "createfood:bun"
+			id: "70FCD865A2A74AEF"
+			tasks: [{
+				id: "0AB3CF1A0EB67D97"
+				title: "Bun"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4DC0BAB201FA32EB"]
+			icon: "create:dough"
+			id: "633CE85B05E121ED"
+			tasks: [{
+				id: "7CFDB22C3970421F"
+				title: "Dough"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["633CE85B05E121ED"]
+			icon: "minecraft:bread"
+			id: "722376087F4C31AA"
+			tasks: [{
+				id: "0D98A78DF909F3A0"
+				title: "Bread"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["722376087F4C31AA"]
+			icon: "createfood:bread_slice"
+			id: "1383C1D92D0AA601"
+			tasks: [{
+				id: "03011FADDEE9D882"
+				title: "Bread slice"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1383C1D92D0AA601"]
+			icon: "createfood:toast_slice"
+			id: "15A56BE5A394859F"
+			tasks: [{
+				id: "7B29E0FF03070B12"
+				title: "Toast Slice"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["15A56BE5A394859F"]
+			icon: "kubejs:breadcrumbs"
+			id: "46562296BB7904CE"
+			tasks: [{
+				id: "1DDA4A2609E9950B"
+				title: "Breadcrumbs"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			icon: "minecraft:chicken_spawn_egg"
+			id: "5B268A42D874355A"
+			tasks: [{
+				id: "75C2DA891F86C4D0"
+				title: "Chickens"
+				type: "checkmark"
+			}]
+			title: "Chicken"
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5B268A42D874355A"]
+			icon: "minecraft:egg"
+			id: "1463A6BD8EEBF298"
+			tasks: [{
+				id: "17BA3C2A219E1F57"
+				title: "Egg"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1463A6BD8EEBF298"]
+			icon: "createfood:glow_berry_juice_bucket"
+			id: "0F44CA36698109A9"
+			tasks: [{
+				id: "00145C0326E8ADCE"
+				title: "Egg Yolk"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5B268A42D874355A"]
+			icon: "minecraft:chicken"
+			id: "5F091D3F6D542200"
+			tasks: [{
+				id: "5C5C65038A94370B"
+				title: "Raw Chicken"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5F091D3F6D542200"]
+			icon: "farmersdelight:chicken_cuts"
+			id: "5CDD142AC7922A20"
+			tasks: [{
+				id: "24A9EDCF12A3C0A4"
+				title: "Raw Chicken Cuts"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5CDD142AC7922A20"]
+			icon: "createfood:shredded_chicken"
+			id: "2CEE9A60C22BB356"
+			tasks: [{
+				id: "5933DEA563E1442E"
+				title: "Shredded Chicken"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2CEE9A60C22BB356"]
+			icon: "createfood:unbreaded_chicken_patty"
+			id: "6EB25662391BB196"
+			tasks: [{
+				id: "1F21C446A48F66CE"
+				title: "Unbreaded Chicken Patty"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"46562296BB7904CE"
+				"6EB25662391BB196"
+				"0F44CA36698109A9"
+			]
+			icon: "kubejs:raw_chicken_patty"
+			id: "04276E77C0F18FC0"
+			tasks: [{
+				id: "51B6CBC9A9DCB5A0"
+				title: "Raw Chicken Patty"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			icon: "minecraft:sunflower"
+			id: "0C1983F836C2D870"
+			tasks: [{
+				id: "044DDA837D907F5F"
+				title: "Sunflowers"
+				type: "checkmark"
+			}]
+			title: "Sunflower"
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0C1983F836C2D870"]
+			icon: "create_bic_bit:sunflower_seeds"
+			id: "14B7AF47B96CF3D1"
+			tasks: [{
+				id: "2C46849E6BF85F7B"
+				title: "Sunflower Seeds"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["14B7AF47B96CF3D1"]
+			icon: "create_bic_bit:crushed_sunflower_seeds"
+			id: "4738119F920E9F97"
+			tasks: [{
+				id: "19C6476B9EFBEFB7"
+				title: "Crushed Sunflower Seeds"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4738119F920E9F97"]
+			icon: "create_bic_bit:frying_oil_bucket"
+			id: "7B952CF9E9A2EDD5"
+			tasks: [{
+				id: "3C0A7106C70AC203"
+				title: "Frying Oil"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"04276E77C0F18FC0"
+				"7B952CF9E9A2EDD5"
+			]
+			icon: "createfood:chicken_patty"
+			id: "14D8E0867E9C3A62"
+			tasks: [{
+				id: "0F75ACD2344B5AF0"
+				title: "Chicken Patty"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			icon: "minecraft:cow_spawn_egg"
+			id: "35AA593ABE151382"
+			tasks: [{
+				id: "269D8DD93B7EBC5E"
+				title: "Cows"
+				type: "checkmark"
+			}]
+			title: "Cow"
+			x: 11.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["35AA593ABE151382"]
+			icon: "minecraft:milk_bucket"
+			id: "3F7449ACFB8F116C"
+			tasks: [{
+				id: "2AF4223AE1162446"
+				title: "Milk"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: -2.5d
+		}
+		{
+			icon: "minecraft:nether_wart"
+			id: "44620AFB632FC6D5"
+			tasks: [{
+				id: "0D949286D47C94E3"
+				title: "Nether Warts"
+				type: "checkmark"
+			}]
+			title: "Nether Wart"
+			x: 10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["44620AFB632FC6D5"]
+			icon: "create_bic_bit:crushed_nether_wart"
+			id: "21458346038B273A"
+			tasks: [{
+				id: "68A33EF30BBD5799"
+				title: "Crushed Nether Wart"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3F7449ACFB8F116C"
+				"21458346038B273A"
+			]
+			icon: "create_bic_bit:curdled_milk_bucket"
+			id: "395C3CAB1C2A0636"
+			tasks: [{
+				id: "243A8753FED438EA"
+				title: "Curdled Milk"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"395C3CAB1C2A0636"
+				"006536CA38087BF5"
+			]
+			icon: "createfood:cheese_block"
+			id: "184F0F103C1292E8"
+			tasks: [{
+				id: "722393A469A3636C"
+				title: "Cheese Block"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["184F0F103C1292E8"]
+			icon: "createfood:cheese_slice"
+			id: "17C49CDE23D9C50F"
+			tasks: [{
+				id: "7278B298592DF9F2"
+				title: "Slice of Cheese"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			icon: "farmersdelight:cabbage"
+			id: "3274928A285B0C0F"
+			tasks: [{
+				id: "430404C61118041C"
+				title: "Lettuce"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3274928A285B0C0F"]
+			icon: "farmersdelight:cabbage_leaf"
+			id: "25105E75A4133F9D"
+			tasks: [{
+				id: "141C71BB7AC9BFED"
+				title: "Lettuce Leaf"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			icon: "farmersdelight:tomato"
+			id: "4A8655EDD01588F0"
+			tasks: [{
+				id: "2985174FAE6DE1F3"
+				title: "Tomato"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4A8655EDD01588F0"]
+			icon: "createfood:sliced_tomato"
+			id: "3882AF5005387C2D"
+			tasks: [{
+				id: "74A1A4202559977A"
+				title: "Sliced Tomato"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"70FCD865A2A74AEF"
+				"14D8E0867E9C3A62"
+				"25105E75A4133F9D"
+				"3882AF5005387C2D"
+				"17C49CDE23D9C50F"
+			]
+			icon: "createfood:cheese_and_chicken_bun_lettuce_tomato"
+			id: "7782966E622DDA40"
+			tasks: [{
+				id: "03914A9D142E33C8"
+				title: "Cheese and Chicken Bun"
+				type: "checkmark"
+			}]
+			title: "Cheese \\& Chicken Bun (Lettuce, Tomato)"
+			x: 13.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4A8655EDD01588F0"]
+			icon: "create_central_kitchen:tomato_sauce_bucket"
+			id: "633B4D74024FBDC0"
+			tasks: [{
+				id: "107FCE78500C8DF6"
+				title: "Tomato Sauce"
+				type: "checkmark"
+			}]
+			x: 13.0d
+			y: -2.5d
+		}
+		{
+			icon: "minecraft:sugar_cane"
+			id: "45E69ED85B5C9FD4"
+			tasks: [{
+				id: "2B5D7033FFD80AE3"
+				title: "Sugar Cane"
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["45E69ED85B5C9FD4"]
+			icon: "minecraft:sugar"
+			id: "3B2D6BC2417C43E8"
+			tasks: [{
+				id: "0B95BCABA79D31F4"
+				title: "Sugar"
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: -2.5d
+		}
+		{
+			icon: "minecraft:apple"
+			id: "442624A7BE04FDE0"
+			tasks: [{
+				id: "7B070643A58F774B"
+				title: "Apple"
+				type: "checkmark"
+			}]
+			x: 15.0d
+			y: -3.5d
+		}
+		{
+			icon: "minecraft:water_bucket"
+			id: "2D4852DD0A8BF83C"
+			tasks: [{
+				id: "00404FB5B5DE2154"
+				title: "Water"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"3B2D6BC2417C43E8"
+				"442624A7BE04FDE0"
+				"2D4852DD0A8BF83C"
+			]
+			icon: "createfood:vinegar_bucket"
+			id: "47C60D9D23D802FD"
+			tasks: [{
+				id: "0B7E40E0F267CBA2"
+				title: "Vinegar"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"633B4D74024FBDC0"
+				"47C60D9D23D802FD"
+				"3B2D6BC2417C43E8"
+				"006536CA38087BF5"
+				"21458346038B273A"
+			]
+			icon: "create_bic_bit:ketchup_bucket"
+			id: "2EFAFE5B0E3D9D8B"
+			tasks: [{
+				id: "784B118301FA78A6"
+				title: "Ketchup"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["35AA593ABE151382"]
+			icon: "minecraft:beef"
+			id: "1406886012A82A17"
+			tasks: [{
+				id: "23E97A012A7D2B9B"
+				title: "Raw Beef"
+				type: "checkmark"
+			}]
+			x: 17.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1406886012A82A17"
+				"006536CA38087BF5"
+			]
+			icon: "createmetallurgy:molten_iron_bucket"
+			id: "11027FF3C70B662F"
+			tasks: [{
+				id: "4631687DA3EE5CC9"
+				title: "Minced Meat"
+				type: "checkmark"
+			}]
+			x: 17.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"11027FF3C70B662F"
+				"0F44CA36698109A9"
+				"46562296BB7904CE"
+			]
+			icon: "farmersdelight:minced_beef"
+			id: "41539FD3F9FBF7D3"
+			tasks: [{
+				id: "63CE8D12A8C6F1B5"
+				title: "Minced Beef"
+				type: "checkmark"
+			}]
+			x: 17.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["41539FD3F9FBF7D3"]
+			icon: "farmersdelight:beef_patty"
+			id: "2E8C497FEB068F6C"
+			tasks: [{
+				id: "5A422D6249A4A7A4"
+				title: "Beef Patty"
+				type: "checkmark"
+			}]
+			x: 17.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"5450A9CB2CF14B69"
+				"025A9AC1213718CE"
+				"17C49CDE23D9C50F"
+				"2E8C497FEB068F6C"
+				"70FCD865A2A74AEF"
+			]
+			icon: "createfood:cheese_and_beef_bun_onion_bacon"
+			id: "55BE63DE5E9385F3"
+			tasks: [{
+				id: "53BDB8D9F0CBF024"
+				title: "Beef Bun"
+				type: "checkmark"
+			}]
+			title: "Cheese \\& Beef Bun (Onion, Bacon)"
+			x: 18.0d
+			y: 8.0d
+		}
+		{
+			icon: "farmersdelight:onion"
+			id: "5DEC00C75E519A48"
+			tasks: [{
+				id: "318843F262BD277D"
+				title: "Onion"
+				type: "checkmark"
+			}]
+			x: 18.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5DEC00C75E519A48"]
+			icon: "createfood:diced_onion"
+			id: "5450A9CB2CF14B69"
+			tasks: [{
+				id: "6280E2C1FB82611D"
+				title: "Diced Onion"
+				type: "checkmark"
+			}]
+			x: 18.0d
+			y: 4.5d
+		}
+		{
+			icon: "minecraft:pig_spawn_egg"
+			id: "11FBE891024DFA49"
+			tasks: [{
+				id: "370D8626CD12361F"
+				title: "Pig"
+				type: "checkmark"
+			}]
+			x: 19.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["11FBE891024DFA49"]
+			icon: "minecraft:porkchop"
+			id: "1B131099ECEF0B3A"
+			tasks: [{
+				id: "0893484D0AE56A93"
+				title: "Raw Pork Chop"
+				type: "checkmark"
+			}]
+			x: 19.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1B131099ECEF0B3A"]
+			icon: "farmersdelight:bacon"
+			id: "7D9423745C84956E"
+			tasks: [{
+				id: "6FD580EDB5B5F14D"
+				title: "Raw Bacon"
+				type: "checkmark"
+			}]
+			x: 19.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7D9423745C84956E"]
+			icon: "farmersdelight:cooked_bacon"
+			id: "025A9AC1213718CE"
+			tasks: [{
+				id: "40D886712460AC86"
+				title: "Cooked Bacon"
+				type: "checkmark"
+			}]
+			x: 19.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1463A6BD8EEBF298"]
+			icon: "farmersdelight:fried_egg"
+			id: "4B453FAD92134210"
+			tasks: [{
+				id: "081B6B6DE477231B"
+				title: "Fried Egg"
+				type: "checkmark"
+			}]
+			x: 14.5d
+			y: 8.0d
+		}
+		{
+			icon: "minecraft:carrot"
+			id: "03DE28A925788070"
+			tasks: [{
+				id: "3140684CFDFCDFB5"
+				title: "Carrot"
+				type: "checkmark"
+			}]
+			x: 20.0d
+			y: -3.5d
+		}
+		{
+			icon: "minecraft:potato"
+			id: "30A884D84A60E2E0"
+			tasks: [{
+				id: "383F65101C52C603"
+				title: "Potato"
+				type: "checkmark"
+			}]
+			x: 21.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"30A884D84A60E2E0"
+				"03DE28A925788070"
+			]
+			icon: "createfood:vegetable_oil_bucket"
+			id: "5010C32C92C7BFD1"
+			tasks: [{
+				id: "081EE3760CED3F84"
+				title: "Vegetable Oil"
+				type: "checkmark"
+			}]
+			x: 20.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0F44CA36698109A9"
+				"47C60D9D23D802FD"
+				"006536CA38087BF5"
+				"5010C32C92C7BFD1"
+			]
+			icon: "create_bic_bit:mayonnaise_bucket"
+			id: "15247AFF53BACFAB"
+			tasks: [{
+				id: "677469113D1DC365"
+				title: "Mayonnaise"
+				type: "checkmark"
+			}]
+			x: 20.0d
+			y: 8.0d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"55BE63DE5E9385F3"
+				"7782966E622DDA40"
+				"2EFAFE5B0E3D9D8B"
+				"15247AFF53BACFAB"
+				"4B453FAD92134210"
+				"70FCD865A2A74AEF"
+			]
+			description: ["Thank you for playing our pack :)"]
+			hide_text_until_complete: true
+			id: "187549E092D1F17A"
+			rewards: [{
+				id: "0E4C5172EE97A465"
+				item: "create:creative_motor"
+				type: "item"
+			}]
+			subtitle: "Tada!"
+			tasks: [{
+				count: 64L
+				id: "4491645601A2B9DA"
+				item: { Count: 64, id: "delightful:deluxe_cheeseburger" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 10.5d
+		}
+	]
+	title: "&l&6Ultimate Deluxe Burger Recipe"
+}

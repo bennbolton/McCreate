@@ -1,0 +1,80 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "introduction"
+	group: ""
+	icon: "createfood:hamburger"
+	id: "188B88A8AB84A92A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "22B02BB511DABC35"
+			subtitle: "&fWelcome to &6&lCreate: Burgified!"
+			tasks: [{
+				id: "32F31A9331168956"
+				title: "Hello!"
+				type: "checkmark"
+			}]
+			title: "&f&lHello!"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["22B02BB511DABC35"]
+			description: ["&fThis modpack is all about &6&lcooking with cogs!&r&f Ultimate Deluxe Burgers are the goal, and these quest lines will help you to achieve it."]
+			icon: "ratatouille:chef_hat"
+			id: "40218DACADE20354"
+			rewards: [{
+				id: "6D31C6EDF2D1165F"
+				item: "ratatouille:chef_hat"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3DD6AA0EF8F6F93C"
+				type: "checkmark"
+			}]
+			title: "&f&lGet Your Aprons Ready!"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["40218DACADE20354"]
+			description: ["&fThis modpack heavily relies on &6&lCreate&r, the well known mechanical mod most of us have come to love. You will be doing a &olot&r of create tomfoolery, and we're all here for that!&r"]
+			icon: "create:wrench"
+			id: "58C19369BCEF092C"
+			rewards: [{
+				id: "2FDE59385181EF3A"
+				item: "create:wrench"
+				type: "item"
+			}]
+			tasks: [{
+				id: "60538F86BD00E6C6"
+				title: "&l&fGet Creative!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["58C19369BCEF092C"]
+			description: ["&fThis modpack will take a lot of determination to get through, but we're sure you've got this! Please enjoy and &l&6thank you for playing!&r"]
+			icon: "delightful:deluxe_cheeseburger"
+			id: "762115C7F0B47A93"
+			rewards: [{
+				count: 5
+				id: "5E0415D6A4AAC054"
+				item: "createfood:cheeseburger_bacon_lettuce_tomato"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1847C1273C91DAD2"
+				title: "&f&lAnd Enjoy!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+	]
+	title: "&2&lIntroduction"
+}

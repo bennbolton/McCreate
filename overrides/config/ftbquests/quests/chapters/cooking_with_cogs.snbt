@@ -1,0 +1,537 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cooking_with_cogs"
+	group: ""
+	icon: "createfood:hamburger_bacon_lettuce"
+	id: "0274853C0456C97B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["If you're here for a tutorial on base create, you're not going to find it. There are plenty of online tutorials that you can follow to get you up to speed with your cogs and shafts. We're here to talk about the &lextras&r."]
+			icon: "create:mechanical_arm"
+			id: "386CB6013ED7311A"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "17CEBEEA27EFA854"
+				title: "Base Create"
+				type: "checkmark"
+			}]
+			title: "&fBase Create"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["386CB6013ED7311A"]
+			description: ["Veterans of Create will notice that something is different with the way you make brass in this pack. The addon Create: Metallurgy takes the alloying process one step further and introduces the &nFoundry&r. This branch of quests will take you through how to get started mixing up your molten metals and get you on the way to automisation in no time."]
+			icon: "create:brass_ingot"
+			id: "6E1100B796AD97E7"
+			size: 1.5d
+			subtitle: "&fCreating Alloys"
+			tasks: [{
+				id: "11DD057D6B3F457F"
+				title: "Create: Metallurgy"
+				type: "checkmark"
+			}]
+			title: "&fMetallurgy"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6E1100B796AD97E7"]
+			description: ["The &nFoundry Basin&r is your first step towards metallurgy. It is used for both alloying and smelting, and so is pretty important. Ponder the &nFoundry Basin&r by holding W while your mouse is over it either in the quest page or in JEI for a comprehensive walkthrough of how to use."]
+			id: "27643D93811E3B50"
+			rewards: [{
+				id: "071E2A62066AD055"
+				item: "createmetallurgy:sturdy_whisk"
+				type: "item"
+			}]
+			subtitle: "&fFoundry Basin"
+			tasks: [{
+				id: "26F00819479858BF"
+				item: "createmetallurgy:foundry_basin"
+				type: "item"
+			}]
+			title: "&fThe Foundry"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["27643D93811E3B50"]
+			description: ["When it comes to melting down your metals, you'll need a &nFoundry Lid&r. This sits on top of the &nFoundry Basin&r and is your first step to alloying."]
+			id: "6605D44754AFD8A6"
+			rewards: [{
+				id: "7EABFC2946109B43"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			subtitle: "&fFoundry Lid"
+			tasks: [{
+				id: "4936577D560CF2D1"
+				item: "createmetallurgy:foundry_lid"
+				type: "item"
+			}]
+			title: "&fSmelting"
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["27643D93811E3B50"]
+			description: ["When it comes to automation, brass is your best friend. It is a required material for a lot of helpful blocks in Create, and to make it you'll need to start alloying. Usually the &nFoundry Mixer&r would be rather expensive, but as this is your first one we're happy to help you out."]
+			id: "507F8CDF9C0181BF"
+			subtitle: "&fFoundry Mixer and Glassed Foundry Lid"
+			tasks: [
+				{
+					id: "41D53B142A2087C9"
+					item: "createmetallurgy:foundry_mixer"
+					type: "item"
+				}
+				{
+					id: "24DB99AB2CECCCD4"
+					item: "createmetallurgy:glassed_foundry_lid"
+					type: "item"
+				}
+			]
+			title: "&fAlloying"
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6605D44754AFD8A6"]
+			description: ["Crushing ore chunks will give you crushed ores believe it or not, but crushing them again will give you dirty dusts. Making dirty dusts gives a chance for an increased amount of metal and so it's worth it."]
+			id: "4B049E3CFDD61106"
+			subtitle: "&fCrush II: the Crushining"
+			tasks: [
+				{
+					id: "329847E9A372E3CC"
+					item: "createmetallurgy:dirty_iron_dust"
+					type: "item"
+				}
+				{
+					id: "04ED2E9607A21AD3"
+					item: "createmetallurgy:dirty_gold_dust"
+					type: "item"
+				}
+				{
+					id: "3720CECD38020F65"
+					item: "createmetallurgy:dirty_copper_dust"
+					type: "item"
+				}
+				{
+					id: "7161C6E6ABA90499"
+					item: "createmetallurgy:dirty_zinc_dust"
+					type: "item"
+				}
+			]
+			title: "&fDirty Dusts"
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4B049E3CFDD61106"]
+			description: ["Washing your dirty dusts using an encased fan and water makes them into clean dusts, go figure. While this process doesn't give you a higher yield of metal, it does give the chance for some interesting by-products."]
+			id: "310B10622E2B4DD2"
+			tasks: [
+				{
+					id: "49D848A65247724A"
+					item: "createmetallurgy:iron_dust"
+					type: "item"
+				}
+				{
+					id: "10210F63887EF64E"
+					item: "createmetallurgy:gold_dust"
+					type: "item"
+				}
+				{
+					id: "57A8E8427F99F1DE"
+					item: "createmetallurgy:copper_dust"
+					type: "item"
+				}
+				{
+					id: "0FBF33393980514E"
+					item: "createmetallurgy:zinc_dust"
+					type: "item"
+				}
+			]
+			title: "&fWashing Dust"
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6605D44754AFD8A6"
+				"507F8CDF9C0181BF"
+			]
+			description: ["Casting is a crucial step in getting your metals in a usable form. Filling a mold on a &nCasting Table&r, or just filling a &nCasting Basin&r, allows you to make your molten metals into ingots, blocks, nuggets, or even straight to plates."]
+			id: "0E80D91E30B55780"
+			rewards: [
+				{
+					id: "4906ACE219FFFAFC"
+					item: "createmetallurgy:graphite_nugget_mold"
+					type: "item"
+				}
+				{
+					id: "3174F7D81ECFB95B"
+					item: "createmetallurgy:graphite_plate_mold"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7568CCF22994D098"
+					item: "createmetallurgy:casting_table"
+					type: "item"
+				}
+				{
+					id: "78269779E26CB208"
+					item: "createmetallurgy:casting_basin"
+					type: "item"
+				}
+				{
+					id: "0DF72C7A5B0ACC74"
+					item: "createmetallurgy:graphite_ingot_mold"
+					type: "item"
+				}
+			]
+			title: "&fCasting"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0E80D91E30B55780"]
+			description: ["Now you have your alloying set up and a way to get ingots out of it, you can go wild and make as much brass as your heart desires."]
+			id: "2845AC379FD48329"
+			subtitle: "&fIt's about time"
+			tasks: [{
+				id: "78124E9F58B4DAD3"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "&fBrass Ingot"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2845AC379FD48329"]
+			description: ["While the materials for netherite remain the same, we took it one step further and made it so you have to alloy it in the foundry, just because we're nice like that."]
+			id: "46447E7FFAE52598"
+			rewards: [{
+				count: 4
+				id: "045F6C6EC10249F3"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			subtitle: "&fAs If Netherite Wasn't Hard Enough"
+			tasks: [{
+				id: "1F3D432F311C1B0D"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			title: "&fNetherite Ingot"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["28D4D132A4333252"]
+			description: ["While sanding is automatable in Create by default, having a &nMechanical Belt Grinder&r makes it both a lot nicer and a lot cooler."]
+			id: "732707D6D9E48F68"
+			tasks: [{
+				id: "3F7602D257C4D3FE"
+				item: "createmetallurgy:mechanical_belt_grinder"
+				type: "item"
+			}]
+			title: "&fMechanical Belt Grinder"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["579954C2B3047EB8"]
+			description: ["Using a &nCooking Guide&r on a &nBlaze Burner&r by shift + right-clicking makes the blaze into a chef! Placing a &nSkillet&r or a &nCooking Pot&r on the blaze burner will now allow you to cook food."]
+			id: "3EB6245914A3E778"
+			subtitle: "&fCooking With Blazes"
+			tasks: [
+				{
+					id: "06DD0EFC0D9EFF39"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "create_central_kitchen:cooking_guide"
+					}
+					type: "item"
+				}
+				{
+					id: "39C2C2E86AE256D8"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "&fCooking Guide"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3EB6245914A3E778"]
+			id: "183FBEB7E47DD16C"
+			tasks: [{
+				id: "70ACB7B854878001"
+				item: {
+					Count: 1
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&fSkillet"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3EB6245914A3E778"]
+			id: "11E24A571A09C62D"
+			tasks: [{
+				id: "247342600AB10AC8"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			title: "&fCooking Pot"
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["579954C2B3047EB8"]
+			description: ["While there are other ways of cooking food in this modpack, we recommend the oven when applicable. This works similarly to the boiler in that it needs a balance of three values to work well: size, air, and heat. Ponder the &nOven&r to see how to make it."]
+			id: "5E5FFD7ABCCAD57F"
+			rewards: [
+				{
+					count: 4
+					id: "7EBF85DA7B5E4205"
+					item: "ratatouille:oven"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "41CB57C19130A8E9"
+					item: "ratatouille:oven_fan"
+					type: "item"
+				}
+			]
+			subtitle: "&fMultiblock Smoking"
+			tasks: [
+				{
+					count: 4L
+					id: "7107D35116372FDD"
+					item: { Count: 4, id: "ratatouille:oven" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "41E8CCAE6532872E"
+					item: { Count: 2, id: "ratatouille:oven_fan" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "45D5593FCB3AF1E2"
+					item: { Count: 4, id: "create:blaze_burner" }
+					type: "item"
+				}
+			]
+			title: "&fOvens"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["579954C2B3047EB8"]
+			description: ["The &nMechanical Fryer&r more or less does what it says on the tin. You put food in and it greases it up for you."]
+			id: "706C0C6B10683882"
+			subtitle: "&fYummy"
+			tasks: [
+				{
+					id: "2766B1442061589F"
+					item: "create_bic_bit:mechanical_fryer"
+					type: "item"
+				}
+				{
+					id: "5ADD3CF823652F96"
+					item: "create_bic_bit:frying_oil_bucket"
+					type: "item"
+				}
+			]
+			title: "&fMechanical Fryer"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["386CB6013ED7311A"]
+			description: ["This modpack adds a fair few different Create machines that will help you automate your way to burger excess."]
+			icon: "farmersdelight:cutting_board"
+			id: "579954C2B3047EB8"
+			size: 1.5d
+			subtitle: "&fWhat the whole modpack is about"
+			tasks: [{
+				id: "04CE93BFC2694239"
+				title: "Cooking"
+				type: "checkmark"
+			}]
+			title: "&fCooking"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["386CB6013ED7311A"]
+			description: ["While none of these machines are needed for the automation of The Ultimate Deluxe Burger, they sure come in handy."]
+			icon: "create_connected:large_crank_wheel"
+			id: "28D4D132A4333252"
+			size: 1.5d
+			tasks: [{
+				id: "6219B0C0F1D6F479"
+				title: "&fHelpful Extras"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["28D4D132A4333252"]
+			description: ["Feed this bad boy seed oil and rotational power and get eggs for days."]
+			id: "049D5BB103A3072E"
+			subtitle: "&fLike a Chicken, but Mechanical!"
+			tasks: [{
+				id: "16D9C6E0DDCDCA9C"
+				item: "create_mechanical_chicken:mechanical_chicken"
+				type: "item"
+			}]
+			title: "&fMechanical Chicken"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["28D4D132A4333252"]
+			description: ["A lag friendly way to automate &nCobblestone&r and other generators"]
+			id: "4870D5DF06287384"
+			subtitle: "&f Extreme Genning"
+			tasks: [{
+				id: "71C02C52501325FD"
+				item: "create_mechanical_extruder:mechanical_extruder"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["28D4D132A4333252"]
+			description: ["Feeding specific spawn fluids into a Mechanical Spawner produces the relevant mobs."]
+			id: "5D78795023EEF0D5"
+			tasks: [{
+				id: "669972815B9C0BDB"
+				item: "create_mechanical_spawner:mechanical_spawner"
+				type: "item"
+			}]
+			title: "&fMechanical Spawner"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["28D4D132A4333252"]
+			description: ["Pair this with the &nMechanical Spawner&r for a lag friendly mob farm."]
+			id: "7964C7D335AB0F47"
+			tasks: [{
+				id: "6B46ECE3D1B322B7"
+				item: "create_mechanical_spawner:loot_collector"
+				type: "item"
+			}]
+			title: "&fLoot Collector"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["28D4D132A4333252"]
+			description: ["Turns rotational power into creative flight! Only works within a radius proportional to the rotational speed."]
+			id: "754C367A8C24E23B"
+			subtitle: "&fIt's Pricey!"
+			tasks: [{
+				id: "1594557790785717"
+				item: "balancedflight:flight_anchor"
+				type: "item"
+			}]
+			title: "&fFlight Anchor"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["754C367A8C24E23B"]
+			description: ["If you manage to make this, hats off to you, you've earnt it."]
+			id: "7EEE5801A2A24C40"
+			subtitle: "&fIt's Even Pricier!"
+			tasks: [{
+				id: "68FEB114D7849FB1"
+				item: "balancedflight:ascended_flight_ring"
+				type: "item"
+			}]
+			title: "&fAscended Flight Ring"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["28D4D132A4333252"]
+			description: ["This block can be filled with anything that a fan would usually blow through for a contained and easier solution."]
+			id: "7FA11BD19226C9DA"
+			subtitle: "&fMakes Fans Easier"
+			tasks: [{
+				id: "06C9D078AB0FE4F9"
+				item: "create_connected:empty_fan_catalyst"
+				type: "item"
+			}]
+			title: "&fEmpty Fan Catalyst"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["579954C2B3047EB8"]
+			description: ["The &nSlicer&r adds a way to automate recipes in create that would usually be done through the &nCutting Board&r from Farmer's Delight."]
+			id: "1DE333A8F6E2B89B"
+			subtitle: "&fBe Careful!"
+			tasks: [
+				{
+					id: "49E27F466DC91C0F"
+					item: "sliceanddice:slicer"
+					type: "item"
+				}
+				{
+					id: "4EC9DBDD90D18A9C"
+					item: {
+						Count: 1
+						id: "farmersdelight:iron_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&fSlicer"
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["28D4D132A4333252"]
+			description: ["The Thresher is a good way to increase the yield from select crops. While it is not needed for The Ultimate Deluxe Burger, we do recommend."]
+			id: "1F9DE577FAC7B2E9"
+			tasks: [{
+				id: "3D2C0C8F185BF2E7"
+				item: "ratatouille:thresher"
+				type: "item"
+			}]
+			title: "&fThresher"
+			x: -2.0d
+			y: 0.0d
+		}
+	]
+	title: "&9&lCooking With Cogs"
+}
