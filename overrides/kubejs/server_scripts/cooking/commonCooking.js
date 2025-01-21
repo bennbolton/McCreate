@@ -14,6 +14,9 @@ ServerEvents.recipes(e => {
     let ings = e.findRecipes({id: "createfood:create/compacting/vegetable_oil_fluid_from_compacting_heated"})[0].getOriginalRecipeIngredients()
     e.remove({id: "createfood:create/compacting/vegetable_oil_fluid_from_compacting_heated"})
     e.recipes.create.compacting(Fluid.of("createfood:vegetable_oil", 250), ings)
+
+    e.remove({id: "createfood:create/mixing/vinegar_bucket_from_mixing_water"})
+    e.replaceInput({id: "createfood:create/mixing/vinegar_from_mixing_water"}, "#forge:fruits", Item.of("#forge:apple", 3))
     
     
     // tomato sauce)
