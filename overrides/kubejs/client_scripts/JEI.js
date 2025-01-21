@@ -28,6 +28,9 @@ JEIEvents.information(event => {
   event.addItem("create_bic_bit:unripe_cheese", ['Unripe cheese can be aged by placing in the world'])
   event.addItem("create_bic_bit:young_cheese", ['Unripe cheese can be aged by placing in the world'])
   event.addItem("create_bic_bit:aged_cheese", ['Unripe cheese can be aged by placing in the world'])
+  event.addItem("farmersdelight:cabbage", ["Lettuces can be commonly found as a wild plant in beach coasts"])
+  event.addItem("farmersdelight:cabbage_leaf", ["Lettuces can be commonly found as a wild plant in beach coasts"])
+  event.addItem("farmersdelight:wild_cabbages", ["Lettuces can be commonly found as a wild plant in beach coasts"])
   // Create garnished generators
   // event.addItem("#garnished:stone_types/zultanite", ["Zultanite blocks can be generated like cobblestone using Lava and their corresponding colour of Liquefied Mastic Resin"])
 })
