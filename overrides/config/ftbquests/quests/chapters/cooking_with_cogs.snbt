@@ -438,7 +438,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["669972815B9C0BDB"]
+			dependencies: ["5D78795023EEF0D5"]
 			description: ["Pair this with the &nMechanical Spawner&r for a lag friendly mob farm."]
 			id: "7964C7D335AB0F47"
 			tasks: [{
