@@ -7,6 +7,10 @@ ServerEvents.recipes(e => {
         let ou = "createmetallurgy:alloying/" + metal
         e.remove(ou)
     })
+    // coke
     e.remove({output: "createmetallurgy:coke", not: {type: "minecraft:crafting_shapeless"}})
     e.recipes.create.compacting("createmetallurgy:coke", "#minecraft:coals").heated()
+
+    // copper metling fix
+    // e.recipes.createmetallurgy.melting(Fluid.of("createmetallurgy:molten_copper", 90))
 })
