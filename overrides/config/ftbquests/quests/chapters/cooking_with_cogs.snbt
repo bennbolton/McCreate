@@ -43,11 +43,6 @@
 			dependencies: ["6E1100B796AD97E7"]
 			description: ["The &nFoundry Basin&r is your first step towards metallurgy. It is used for both alloying and smelting, and so is pretty important. Ponder the &nFoundry Basin&r by holding W while your mouse is over it either in the quest page or in JEI for a comprehensive walkthrough of how to use."]
 			id: "27643D93811E3B50"
-			rewards: [{
-				id: "071E2A62066AD055"
-				item: "createmetallurgy:sturdy_whisk"
-				type: "item"
-			}]
 			subtitle: "&fFoundry Basin"
 			tasks: [{
 				id: "26F00819479858BF"
