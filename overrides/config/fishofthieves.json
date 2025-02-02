@@ -1,9 +1,9 @@
 {
   "general": {
     "trophyMaxHealth": 5.0,
-    "enableEarthwormsDrop": true,
-    "enableGrubsDrop": true,
-    "enableLeechesDrop": true,
+    "enableEarthwormsDrop": false,
+    "enableGrubsDrop": false,
+    "enableLeechesDrop": false,
     "simpleSpawningCondition": false,
     "neutralFishBehavior": false,
     "displayAllFishVariantInCreativeTab": false,
