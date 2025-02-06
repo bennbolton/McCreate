@@ -15,6 +15,8 @@ JEIEvents.hideItems(event => {
     })
     event.hide("createmetallurgy:graphite_rod_mold")
     event.hide("createmetallurgy:graphite_gear_mold")
+    // bad items
+    event.hide('petrolsparts:hydraulic_transmission')
 
   })
 // show hidden
