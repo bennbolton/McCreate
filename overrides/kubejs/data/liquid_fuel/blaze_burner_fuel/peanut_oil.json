@@ -1,0 +1,6 @@
+{
+    "fluid": "garnished:peanut_oil",
+    "burnTime": 20,
+    "superHeat": true,
+    "amountConsumedPerTick" : 1
+  }
