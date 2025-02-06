@@ -22,3 +22,4 @@ jobs:
         with:
           name: modpack
           path: Burgified-.zip
+          overwrite: true
