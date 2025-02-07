@@ -1,0 +1,13 @@
+ServerEvents.recipes(e => {
+    e.remove({id: "create_things_and_misc:slime_gun_craft"})
+    e.recipes.create.filling('create_things_and_misc:spout_gun_slime', [Fluid.of("createfood:slime", 1000), "create_things_and_misc:spout_gun"])
+    e.remove({id: "create_things_and_misc:glue_fluid_craft"})
+    e.recipes.create.filling("create:super_glue", [Fluid.of("createfood:slime", 100), "create_things_and_misc:glue_packaging"])
+    e.remove({id: "create_things_and_misc:porridgecraft"})
+    e.recipes.create.filling('create_things_and_misc:slime_cake', [Fluid.of("createfood:slime", 250), "create:blaze_cake_base"])
+    e.remove({id: "create:fill_minecraft_bucket_with_create_things_and_misc_slime"})
+    e.remove({id: "createfood:minecraft/crafting/slime_block_from_crafting"})
+    e.remove({output: 'createfood:pasta_plate_slime', not: {type: "create:filling"}})
+    e.recipes.create.mixing(Fluid.of("createfood:slime", 1000), ["minecraft:slime_block"]).heated()
+    e.remove({id: "create_things_and_misc:slimefluidcraft"})
+})

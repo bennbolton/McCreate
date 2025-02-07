@@ -17,6 +17,7 @@ JEIEvents.hideItems(event => {
     event.hide("createmetallurgy:graphite_gear_mold")
     // bad items
     event.hide('petrolsparts:hydraulic_transmission')
+    event.hide('create_things_and_misc:slime_bucket')
 
   })
 // show hidden
@@ -41,5 +42,6 @@ JEIEvents.hideFluids(event => {
   metals.forEach(metal => {
     event.hide("createmetallurgy:molten_" + metal)
   })
+  event.hide("create_things_and_misc:slime")
   
 })
