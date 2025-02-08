@@ -31,9 +31,17 @@ JEIEvents.addItems(e => {
     })
     e.add("create_dd:blueprint_block")
 
-    Item.list.forEach(item => {
-        if (item.id.includes('_limestone')) {
-            e.add(item.id)
-        }
-    })
+    e.add("create_dd:hydraulic_casing")
+    e.add("create_dd:industrial_casing")
+    e.add("create_dd:creative_casing")
+
+    function add_cDD (thing) {
+        Item.list.forEach(item => {
+            if (item.id.includes("create_dd") && item.id.includes(thing)) {
+                e.add(item.id)
+            }
+        })
+    }
+    let things = ['_limestone', 'netherrack', 'amethyst', 'stone', 'mud', 'basalt']
+    things.forEach(thing => {add_cDD(thing)})
 })
