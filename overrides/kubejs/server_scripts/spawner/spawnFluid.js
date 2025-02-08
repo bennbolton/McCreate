@@ -4,5 +4,5 @@ ServerEvents.recipes(e => {
 
     //spawn fluid recipes
     e.remove({id: "create_mechanical_spawner:mixing/spawn_fluid_chicken"})
-    e.recipes.create.mixing(Fluid.of("create_mechanical_spawner:flowing_spawn_fluid_chicken", 250) ,[Fluid.of("create_mechanical_spawner:spawn_fluid_random", 100), "minecraft:wheat_seeds", "minecraft:feather"])
+    e.recipes.create.mixing(Fluid.of("create_mechanical_spawner:spawn_fluid_chicken", 250) ,[Fluid.of("create_mechanical_spawner:spawn_fluid_random", 100), "minecraft:wheat_seeds", "minecraft:feather"])
 })
