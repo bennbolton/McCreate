@@ -19,3 +19,21 @@ JEIEvents.hideItems(e => {
     e.hide('create_dd:abstruse_mechanism')
     // e.hide()
 })
+
+JEIEvents.addItems(e => {
+    let colors = [
+        "white", "orange", "magenta", "yellow", "lime", "pink", "gray", "light_gray",
+        "cyan", "purple", "brown", "green", "red", "black", "light"
+    ];
+    
+    colors.forEach(color => {
+        e.add(`create_dd:${color}_blueprint_block`)
+    })
+    e.add("create_dd:blueprint_block")
+
+    Item.list.forEach(item => {
+        if (item.id.includes('_limestone')) {
+            e.add(item.id)
+        }
+    })
+})

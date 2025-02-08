@@ -23,8 +23,32 @@ ServerEvents.recipes(e => {
 
 
     e.remove({output: 'create_dd:diamond_shard'})
-    // need replacement recipe
+    e.custom({
+        "type": "create_dd:seething",
+        "ingredients": [
+          {
+            "item": "minecraft:coal_block"
+          }
+        ],
+        "results": [
+          {
+            "chance": 0.01,
+            "item": "create_dd:diamond_shard"
+          }
+        ]
+      })
 
 
     e.recipes.minecraft.crafting_shaped('create_dd:blueprint_block', ['BB','BB'], {B: "create:empty_schematic"})
+    e.recipes.create.item_application("create_dd:creative_casing", ["createcasing:creative_casing", "createcasing:chorium_ingot"])
+    e.recipes.create.compacting(Fluid.of("create_dd:sap", 50), ['4x #minecraft:saplings']).heated()
+    e.recipes.create.mechanical_crafting("create_dd:giant_gear", [
+            ' BBB ',
+            'BBSBB',
+            'BSFSB',
+            'BBSBB',
+            ' BBB '
+        ],
+        {B: "create:brass_ingot", S: "create:shaft", F: "create:flywheel"}
+    )
 })
