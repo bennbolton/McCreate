@@ -482,7 +482,7 @@
 				type: "checkmark"
 			}]
 			title: "Cheese \\& Chicken Bun (Lettuce, Tomato)"
-			x: 13.0d
+			x: 8.0d
 			y: 8.0d
 		}
 		{
@@ -729,7 +729,7 @@
 				title: "Fried Egg"
 				type: "checkmark"
 			}]
-			x: 14.5d
+			x: 16.0d
 			y: 8.0d
 		}
 		{
@@ -808,7 +808,7 @@
 			tasks: [{
 				count: 64L
 				id: "4491645601A2B9DA"
-				item: { Count: 64, id: "delightful:deluxe_cheeseburger" }
+				item: "delightful:deluxe_cheeseburger"
 				type: "item"
 			}]
 			x: 13.0d

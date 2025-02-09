@@ -57,11 +57,18 @@
 			dependencies: ["27643D93811E3B50"]
 			description: ["When it comes to melting down your metals, you'll need a &nFoundry Lid&r. This sits on top of the &nFoundry Basin&r and is your first step to alloying."]
 			id: "6605D44754AFD8A6"
-			rewards: [{
-				id: "7EABFC2946109B43"
-				item: "minecraft:iron_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1F5E15C348EB610F"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "6EEAC26B876D7DC7"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "&fFoundry Lid"
 			tasks: [{
 				id: "4936577D560CF2D1"
@@ -230,7 +237,10 @@
 		}
 		{
 			dependencies: ["28D4D132A4333252"]
-			description: ["While sanding is automatable in Create by default, having a &nMechanical Belt Grinder&r makes it both a lot nicer and a lot cooler."]
+			description: [
+				"While sanding is automatable in Create by default, having a &nMechanical Belt Grinder&r makes it both a lot nicer and a lot cooler. "
+				"Be careful with your boots' durability!"
+			]
 			id: "732707D6D9E48F68"
 			tasks: [{
 				id: "3F7602D257C4D3FE"
@@ -321,19 +331,19 @@
 				{
 					count: 4L
 					id: "7107D35116372FDD"
-					item: { Count: 4, id: "ratatouille:oven" }
+					item: "ratatouille:oven"
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "41E8CCAE6532872E"
-					item: { Count: 2, id: "ratatouille:oven_fan" }
+					item: "ratatouille:oven_fan"
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "45D5593FCB3AF1E2"
-					item: { Count: 4, id: "create:blaze_burner" }
+					item: "create:blaze_burner"
 					type: "item"
 				}
 			]
@@ -526,6 +536,56 @@
 			title: "&fThresher"
 			x: -2.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["386CB6013ED7311A"]
+			description: [
+				"&fVerious different nuts can be found around the world in various structures like Dungeons and Mineshafts."
+				"While most of these are just fun food types, the &nPeanut&r will be your best friend when it comes to automating Super-Heating &nBlaze Burners&r."
+			]
+			icon: "garnished:peanut"
+			id: "54B3C3B410102E4E"
+			size: 1.5d
+			subtitle: "&fHow to Super-Heat"
+			tasks: [{
+				id: "49889C49EA8C203A"
+				item: "garnished:ungarnished_peanut"
+				type: "item"
+			}]
+			title: "&fNuts"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["54B3C3B410102E4E"]
+			description: ["&fOnce you've found yourself a &nPeanut&r, you can do one of two things: use it up, or make more! Crushing a &nPeanut&r in either &nCrushing Wheels&r or a &nMillstone&r gives you a &nCracked Peanut&r, and these function exactly the same as how a sappling would but for peanut trees."]
+			id: "225787A26FFEBDD2"
+			subtitle: "&fGrowing More Peanuts"
+			tasks: [{
+				id: "32D411E84195ACF4"
+				item: "garnished:cracked_peanut"
+				type: "item"
+			}]
+			title: "&fCracked Peanut"
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["54B3C3B410102E4E"]
+			description: [
+				"&fNow that you have &nPeanuts&r, you can start to make &nPeanut Oil&r. This is used as a fuel for &nBlaze Burners&r as an alternative way to automate Super-Heating. All you need to do is pump the liquid directly into the &nBlaze Burner&r and it will run for as long as there is fuel."
+				"Super-Heating can be useful for max level boilers, and for recipes that require Super-Heating."
+			]
+			id: "2CC54EB2EF142CE5"
+			subtitle: "&fFuel For Blaze Burners"
+			tasks: [{
+				id: "5F0EF524C88BEE5B"
+				item: "garnished:peanut_oil_bucket"
+				type: "item"
+			}]
+			title: "&fPeanut Oil"
+			x: -5.0d
+			y: -3.0d
 		}
 	]
 	title: "&9&lCooking With Cogs"
