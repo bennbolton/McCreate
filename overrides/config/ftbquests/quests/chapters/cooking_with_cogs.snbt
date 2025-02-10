@@ -540,7 +540,7 @@
 		{
 			dependencies: ["386CB6013ED7311A"]
 			description: [
-				"&fVerious different nuts can be found around the world in various structures like Dungeons and Mineshafts."
+				"&fVarious different nuts can be found around the world in structures like Dungeons and Mineshafts."
 				"While most of these are just fun food types, the &nPeanut&r will be your best friend when it comes to automating Super-Heating &nBlaze Burners&r."
 			]
 			icon: "garnished:peanut"
@@ -558,7 +558,7 @@
 		}
 		{
 			dependencies: ["54B3C3B410102E4E"]
-			description: ["&fOnce you've found yourself a &nPeanut&r, you can do one of two things: use it up, or make more! Crushing a &nPeanut&r in either &nCrushing Wheels&r or a &nMillstone&r gives you a &nCracked Peanut&r, and these function exactly the same as how a sappling would but for peanut trees."]
+			description: ["&fOnce you've found yourself a &nPeanut&r, you can do one of two things: eat it up, or make more! Crushing a &nPeanut&r in either &nCrushing Wheels&r or a &nMillstone&r will give you a &nCracked Peanut&r, and these function like a sapling for peanut trees."]
 			id: "225787A26FFEBDD2"
 			subtitle: "&fGrowing More Peanuts"
 			tasks: [{
