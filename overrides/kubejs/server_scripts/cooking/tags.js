@@ -18,6 +18,9 @@ ServerEvents.tags('item', e => {
     // stones 
     e.removeAll("garnishedstoneautomation:acceptable_stone_ingredients")
     e.add("garnishedstoneautomation:acceptable_stone_ingredients", "tuff")
+
+    //quality foods
+    e.add("quality_food:blacklist", ["minecraft:kelp", "minecraft:dried_kelp"])
 })
 
 ServerEvents.tags('block', e => {
