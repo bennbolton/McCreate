@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: ["You can open this page any time using the &nRecipe book&r or by clicking \"[\""]
 			id: "22B02BB511DABC35"
 			subtitle: "&fWelcome to &6&lCreate: Burgified!"
 			tasks: [{
