@@ -17,6 +17,28 @@ ServerEvents.recipes(e => {
 
     e.remove({output: 'createfood:vinegar_bucket'})
     e.replaceInput({id: "createfood:create/mixing/vinegar_from_mixing_water"}, "#forge:fruits", "3x #forge:apple")
+
+    e.remove('create_bic_bit:mixing/sunflower_seeds_recipe')
+    e.custom({
+        "type": "ratatouille:threshing",
+        "ingredients": [
+          {
+            "item": "minecraft:sunflower"
+          }
+        ],
+        "processingTime": 200,
+        "results": [
+          {
+            "item": 'create_bic_bit:sunflower_seeds',
+            "count": 1
+          },
+          {
+            "item": 'create_bic_bit:sunflower_seeds',
+            "count": 1,
+            "chance": 0.1
+          }
+        ]
+      })
     
     
     // tomato sauce)
