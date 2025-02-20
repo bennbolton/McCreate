@@ -6,7 +6,6 @@ ServerEvents.recipes(e => {
 
     for (let mod in weirdWoods) {
         for (let wood in weirdWoods[mod]) {
-            console.log(mod, wood, weirdWoods[mod][wood])
             e.recipes.farmersdelight.cutting(`${mod}:${weirdWoods[mod][wood]}_log`, "#minecraft:axes", [`${mod}:stripped_${weirdWoods[mod][wood]}_log`, "farmersdelight:tree_bark"])
             e.recipes.farmersdelight.cutting(`${mod}:${weirdWoods[mod][wood]}_wood`, "#minecraft:axes", [`${mod}:stripped_${weirdWoods[mod][wood]}_wood`, "farmersdelight:tree_bark"])
             if (!mod.includes("ecologics")) {
